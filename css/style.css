@@ -1,0 +1,38 @@
+
+
+body {
+    background-color: #F9F7F7;
+    
+}
+.card-title{
+    font-size: 1.2rem;
+}
+.banner-wrapper {
+    background-color: #D6EFD8;
+}
+.navbar {
+    background-color: #198754;
+}
+.banner {
+    height: 300px;
+}
+
+.card-img-top {
+    width: 50%;
+    height: 200px;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.card-title {
+    height: 50px;
+}
+
+.text-grn {
+    color: #1A5319;
+}
+
+.border-grn {
+    border-radius: 1%;
+    border: solid 1px #1A5319;
+}

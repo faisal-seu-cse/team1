@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UN Member Countries Population 2024</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <img id="logo" src="un_logo.png" alt="UN Logo" />
+      <h1>UN PARTICIPATION WORLD MAP 2024</h1>
+    </div>
+    <div id="filterContainer">
+      <label id="countryLabel" for="countryFilter">Filter by Country:</label>
+      <select id="countryFilter">
+        <option value="All">All</option>
+      </select>
+      <label id="unLabel" for="unFilter">Filter by UN Membership:</label>
+      <select id="unFilter">
+        <option value="All">All</option>
+        <option value="UN">UN Member</option>
+        <option value="non-UN">Non-UN Member</option>
+      </select>
+      <button id="filterButton">Filter Countries</button>
+    </div>
+    <div id="map"></div>
+    <div id="info"></div>
+    <script>
+      const width = 1000;
+      const height = 700;
+
+      const svg = d3
+        .select("#map")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+      svg
+        .append("rect")
+        .attr("class", "border")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("width", width)
+        .attr("height", height);
+
+      const projection = d3
+        .geoNaturalEarth1()
+        .scale(150)
+        .translate([width / 2, height / 2]);
+
+      const path = d3.geoPath().projection(projection);
+
+      const tooltip = d3
+        .select("body")
+        .append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
+      const info = d3.select("#info");
+
+      // Zoom functionality
+      const zoom = d3
+        .zoom()
+        .scaleExtent([1, 8])
+        .on("zoom", (event) => {
+          svg.selectAll("path").attr("transform", event.transform);
+        });
+
+      svg.call(zoom);
+
+      // Load the population dataset and GeoJSON data
+      Promise.all([
+        d3.json("2024Populations_required.json"),
+        d3.json("custom.geojson"),
+      ]).then(([populationData, geoData]) => {
+        const countriesData = new Map(
+          populationData.map((d) => [d.country, d])
+        );
+
+        const countries = svg
+          .append("g")
+          .selectAll("path")
+          .data(geoData.features)
+          .enter()
+          .append("path")
+          .attr("d", path)
+          .attr("class", "country")
+          .style("fill", (d) => {
+            const country = countriesData.get(d.properties.name);
+            return country
+              ? country.unMember
+                ? "#5B92E5"
+                : "#F26C4F"
+              : "grey"; // UN blue and non-UN red
+          })
+          .on("mouseover", (event, d) => {
+            const country = countriesData.get(d.properties.name);
+            if (country) {
+              tooltip.transition().duration(200).style("opacity", 0.9);
+              tooltip
+                .html(
+                  `${country.country}<br>Population 2024: ${country.pop2024}`
+                )
+                .style("left", event.pageX + "px")
+                .style("top", event.pageY - 28 + "px");
+            }
+          })
+          .on("mouseout", (d) => {
+            tooltip.transition().duration(500).style("opacity", 0);
+          });
+
+        // Populate the filter dropdown
+        const countryNames = Array.from(countriesData.keys()).sort();
+        d3.select("#countryFilter")
+          .selectAll("option")
+          .data(countryNames)
+          .enter()
+          .append("option")
+          .text((d) => d);
+
+        // Filter button functionality
+        d3.select("#filterButton").on("click", () => {
+          const selectedCountry = d3.select("#countryFilter").property("value");
+          const unFilterValue = d3.select("#unFilter").property("value");
+
+          countries.style("opacity", (d) => {
+            const country = countriesData.get(d.properties.name);
+            if (selectedCountry === "All" && unFilterValue === "All") {
+              return 1;
+            } else if (
+              selectedCountry !== "All" &&
+              d.properties.name === selectedCountry
+            ) {
+              return 1;
+            } else if (unFilterValue === "UN" && country && country.unMember) {
+              return 1;
+            } else if (
+              unFilterValue === "non-UN" &&
+              country &&
+              !country.unMember
+            ) {
+              return 1;
+            } else {
+              return 0.1;
+            }
+          });
+
+          if (selectedCountry !== "All") {
+            const country = countriesData.get(selectedCountry);
+            const [[x0, y0], [x1, y1]] = path.bounds(
+              geoData.features.find(
+                (d) => d.properties.name === selectedCountry
+              )
+            );
+            svg
+              .transition()
+              .duration(750)
+              .call(
+                zoom.transform,
+                d3.zoomIdentity
+                  .translate(width / 2, height / 2)
+                  .scale(2)
+                  .translate(-(x0 + x1) / 2, -(y0 + y1) / 2),
+                d3.pointer(event, svg.node())
+              );
+            info.html(`
+                        <p>Country: ${country.country}</p>
+                        <p>Population 2024: ${country.pop2024}</p>
+                    `);
+          } else {
+            svg
+              .transition()
+              .duration(750)
+              .call(
+                zoom.transform,
+                d3.zoomIdentity,
+                d3.zoomTransform(svg.node()).invert([width / 2, height / 2])
+              );
+            info.html("");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

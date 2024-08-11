@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Continent racing bar chart</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      svg {
+        border: 1px solid #ccc;
+      }
+      .controls {
+        margin-top: 20px;
+      }
+      .button {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .play {
+        background-color: #4caf50;
+        color: white;
+      }
+      .pause {
+        background-color: #f44336;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chart-container"></div>
+    <div class="controls">
+      <button id="playButton" class="button play">Play</button>
+      <button id="pauseButton" class="button pause">Pause</button>
+    </div>
+
+    <script>
+      const margin = { top: 20, right: 30, bottom: 40, left: 90 },
+        width = 800 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
+
+      const svg = d3
+        .select("#chart-container")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+      const yearText = svg
+        .append("text")
+        .attr("x", width / 2)
+        .attr("y", height / 2 - 10)
+        .attr("text-anchor", "middle")
+        .attr("font-size", "48px")
+        .attr("font-weight", "bold")
+        .style("fill", "grey");
+
+      let intervalId; // playvack
+
+      //loading the json file
+      d3.json("n_df.json")
+        .then((data) => {
+          const years = Object.keys(data.Africa);
+          const continents = Object.keys(data);
+
+          const formatted_data = years.map((year) => {
+            let year_data = { year: year };
+            continents.forEach((continent) => {
+              year_data[continent] = data[continent][year];
+            });
+            return year_data;
+          });
+
+          //maximum value of all years
+          const maxValue = d3.max(formatted_data, (d) =>
+            d3.max(continents, (continent) => d[continent])
+          );
+
+          //bar colors
+          const color = d3.scaleOrdinal(d3.schemeCategory10).domain(continents);
+
+          //setting axes
+          const x = d3.scaleLinear().range([0, width]);
+
+          //digits to billion/million
+          const millionBillion = (d) => {
+            if (d >= 1e9) return (d / 1e9).toFixed(2) + "B"; // Format billions
+            if (d >= 1e6) return (d / 1e6).toFixed(2) + "M"; // Format millions
+            return d; // Fallback
+          };
+
+          //x-axis domain once
+          x.domain([0, maxValue]);
+          const xAxis = svg
+            .append("g")
+            .attr("transform", `translate(0,${height})`)
+            .call(d3.axisBottom(x).tickFormat(millionBillion)); // Apply the custom formatter
+
+          //x-axis label
+          svg
+            .append("text")
+            .attr(
+              "transform",
+              `translate(${width / 2}, ${height + margin.bottom - 10})`
+            )
+            .attr("text-anchor", "middle")
+            .attr("font-size", "14px")
+            .text("Population");
+
+          const y = d3.scaleBand().range([0, height]).padding(0.1);
+
+          const yAxis = svg.append("g").call(d3.axisLeft(y));
+
+          //y-axis label
+          svg
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("x", -height / 2)
+            .attr("y", -margin.left + 10)
+            .attr("text-anchor", "middle")
+            .attr("font-size", "14px")
+            .text("Continent");
+
+          //update chart with the data
+          function update(year_data) {
+            //sort continents
+            const sortedContinents = continents
+              .map((continent) => ({
+                continent: continent,
+                value: year_data[continent],
+              }))
+              .sort((a, b) => b.value - a.value);
+
+            y.domain(sortedContinents.map((d) => d.continent));
+            yAxis.call(d3.axisLeft(y));
+
+            const bars = svg.selectAll("rect").data(sortedContinents);
+
+            bars
+              .enter()
+              .append("rect")
+              .merge(bars)
+              .transition()
+              .duration(1000)
+              .attr("x", x(0))
+              .attr("y", (d) => y(d.continent))
+              .attr("width", (d) => x(d.value))
+              .attr("height", y.bandwidth())
+              .attr("fill", (d) => color(d.continent));
+
+            bars.exit().remove();
+
+            const labels = svg.selectAll(".label").data(sortedContinents);
+
+            labels
+              .enter()
+              .append("text")
+              .attr("class", "label")
+              .merge(labels)
+              .transition()
+              .duration(1000)
+              .attr("x", (d) => Math.min(x(d.value) + 5, width - 40))
+              .attr("y", (d) => y(d.continent) + y.bandwidth() / 2 + 5)
+              .text((d) => d.value)
+              .style("fill", "black")
+              .style("font-size", "12px");
+
+            labels.exit().remove();
+
+            yearText.text(year_data.year);
+          }
+
+          let yearIndex = 0;
+          function startAnimation() {
+            if (!intervalId) {
+              intervalId = setInterval(() => {
+                yearIndex = (yearIndex + 1) % formatted_data.length;
+                update(formatted_data[yearIndex]);
+              }, 2000);
+            }
+          }
+
+          function stopAnimation() {
+            clearInterval(intervalId);
+            intervalId = null;
+          }
+
+          //startAnimation();
+
+          document
+            .getElementById("playButton")
+            .addEventListener("click", () => {
+              startAnimation();
+            });
+
+          document
+            .getElementById("pauseButton")
+            .addEventListener("click", () => {
+              stopAnimation();
+            });
+        })
+        .catch((error) => {
+          console.error("Error loading data:", error);
+        });
+    </script>
+  </body>
+</html>

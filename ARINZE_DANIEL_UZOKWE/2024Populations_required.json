@@ -1,0 +1,1640 @@
+[
+ {
+   "country": "Afghanistan",
+   "unMember": true,
+   "pop2023": 42239854,
+   "pop2024": 43372950,
+   "continent": "Asia"
+ },
+ {
+   "country": "Albania",
+   "unMember": true,
+   "pop2023": 2832439,
+   "pop2024": 2826020,
+   "continent": "Europe"
+ },
+ {
+   "country": "Algeria",
+   "unMember": true,
+   "pop2023": 45606480,
+   "pop2024": 46278751,
+   "continent": "Africa"
+ },
+ {
+   "country": "American Samoa",
+   "unMember": false,
+   "pop2023": 43914,
+   "pop2024": 43544,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Andorra",
+   "unMember": true,
+   "pop2023": 80088,
+   "pop2024": 80341,
+   "continent": "Europe"
+ },
+ {
+   "country": "Angola",
+   "unMember": true,
+   "pop2023": 36684202,
+   "pop2024": 37804634,
+   "continent": "Africa"
+ },
+ {
+   "country": "Anguilla",
+   "unMember": false,
+   "pop2023": 15899,
+   "pop2024": 15936,
+   "continent": "North America"
+ },
+ {
+   "country": "Antigua and Barbuda",
+   "unMember": true,
+   "pop2023": 94298,
+   "pop2024": 94816,
+   "continent": "North America"
+ },
+ {
+   "country": "Argentina",
+   "unMember": true,
+   "pop2023": 45773884,
+   "pop2024": 46057866,
+   "continent": "South America"
+ },
+ {
+   "country": "Armenia",
+   "unMember": true,
+   "pop2023": 2777970,
+   "pop2024": 2777979,
+   "continent": "Asia"
+ },
+ {
+   "country": "Aruba",
+   "unMember": false,
+   "pop2023": 106277,
+   "pop2024": 106177,
+   "continent": "North America"
+ },
+ {
+   "country": "Australia",
+   "unMember": true,
+   "pop2023": 26439111,
+   "pop2024": 26699482,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Austria",
+   "unMember": true,
+   "pop2023": 8958960,
+   "pop2024": 8977139,
+   "continent": "Europe"
+ },
+ {
+   "country": "Azerbaijan",
+   "unMember": true,
+   "pop2023": 10412651,
+   "pop2024": 10462904,
+   "continent": "Asia"
+ },
+ {
+   "country": "Bahamas",
+   "unMember": true,
+   "pop2023": 412623,
+   "pop2024": 415223,
+   "continent": "North America"
+ },
+ {
+   "country": "Bahrain",
+   "unMember": true,
+   "pop2023": 1485509,
+   "pop2024": 1498712,
+   "continent": "Asia"
+ },
+ {
+   "country": "Bangladesh",
+   "unMember": true,
+   "pop2023": 172954319,
+   "pop2024": 174701211,
+   "continent": "Asia"
+ },
+ {
+   "country": "Barbados",
+   "unMember": true,
+   "pop2023": 281995,
+   "pop2024": 282309,
+   "continent": "North America"
+ },
+ {
+   "country": "Belarus",
+   "unMember": true,
+   "pop2023": 9498238,
+   "pop2024": 9455037,
+   "continent": "Europe"
+ },
+ {
+   "country": "Belgium",
+   "unMember": true,
+   "pop2023": 11686140,
+   "pop2024": 11715774,
+   "continent": "Europe"
+ },
+ {
+   "country": "Belize",
+   "unMember": true,
+   "pop2023": 410825,
+   "pop2024": 416656,
+   "continent": "North America"
+ },
+ {
+   "country": "Benin",
+   "unMember": true,
+   "pop2023": 13712828,
+   "pop2024": 14080072,
+   "continent": "Africa"
+ },
+ {
+   "country": "Bermuda",
+   "unMember": false,
+   "pop2023": 64069,
+   "pop2024": 63935,
+   "continent": "North America"
+ },
+ {
+   "country": "Bhutan",
+   "unMember": true,
+   "pop2023": 787424,
+   "pop2024": 792382,
+   "continent": "Asia"
+ },
+ {
+   "country": "Bolivia",
+   "unMember": true,
+   "pop2023": 12388571,
+   "pop2024": 12567336,
+   "continent": "South America"
+ },
+ {
+   "country": "Bosnia and Herzegovina",
+   "unMember": true,
+   "pop2023": 3210847,
+   "pop2024": 3194378,
+   "continent": "Europe"
+ },
+ {
+   "country": "Botswana",
+   "unMember": true,
+   "pop2023": 2675352,
+   "pop2024": 2719694,
+   "continent": "Africa"
+ },
+ {
+   "country": "Brazil",
+   "unMember": true,
+   "pop2023": 216422446,
+   "pop2024": 217637297,
+   "continent": "South America"
+ },
+ {
+   "country": "British Virgin Islands",
+   "unMember": false,
+   "pop2023": 31538,
+   "pop2024": 31763,
+   "continent": "North America"
+ },
+ {
+   "country": "Brunei",
+   "unMember": true,
+   "pop2023": 452524,
+   "pop2024": 455858,
+   "continent": "Asia"
+ },
+ {
+   "country": "Bulgaria",
+   "unMember": true,
+   "pop2023": 6687717,
+   "pop2024": 6618615,
+   "continent": "Europe"
+ },
+ {
+   "country": "Burkina Faso",
+   "unMember": true,
+   "pop2023": 23251485,
+   "pop2024": 23840247,
+   "continent": "Africa"
+ },
+ {
+   "country": "Burundi",
+   "unMember": true,
+   "pop2023": 13238559,
+   "pop2024": 13591657,
+   "continent": "Africa"
+ },
+ {
+   "country": "Cambodia",
+   "unMember": true,
+   "pop2023": 16944826,
+   "pop2024": 17121847,
+   "continent": "Asia"
+ },
+ {
+   "country": "Cameroon",
+   "unMember": true,
+   "pop2023": 28647293,
+   "pop2024": 29394433,
+   "continent": "Africa"
+ },
+ {
+   "country": "Canada",
+   "unMember": true,
+   "pop2023": 38781291,
+   "pop2024": 39107046,
+   "continent": "North America"
+ },
+ {
+   "country": "Cape Verde",
+   "unMember": true,
+   "pop2023": 598682,
+   "pop2024": 604461,
+   "continent": "Africa"
+ },
+ {
+   "country": "Cayman Islands",
+   "unMember": false,
+   "pop2023": 69310,
+   "pop2024": 69885,
+   "continent": "North America"
+ },
+ {
+   "country": "Central African Republic",
+   "unMember": true,
+   "pop2023": 5742315,
+   "pop2024": 5915627,
+   "continent": "Africa"
+ },
+ {
+   "country": "Chad",
+   "unMember": true,
+   "pop2023": 18278568,
+   "pop2024": 18847148,
+   "continent": "Africa"
+ },
+ {
+   "country": "Chile",
+   "unMember": true,
+   "pop2023": 19629590,
+   "pop2024": 19658839,
+   "continent": "South America"
+ },
+ {
+   "country": "China",
+   "unMember": true,
+   "pop2023": 1425671352,
+   "pop2024": 1425178782,
+   "continent": "Asia"
+ },
+ {
+   "country": "Colombia",
+   "unMember": true,
+   "pop2023": 52085168,
+   "pop2024": 52340774,
+   "continent": "South America"
+ },
+ {
+   "country": "Comoros",
+   "unMember": true,
+   "pop2023": 852075,
+   "pop2024": 867605,
+   "continent": "Africa"
+ },
+ {
+   "country": "Cook Islands",
+   "unMember": false,
+   "pop2023": 17044,
+   "pop2024": 17072,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Costa Rica",
+   "unMember": true,
+   "pop2023": 5212173,
+   "pop2024": 5246714,
+   "continent": "North America"
+ },
+ {
+   "country": "Croatia",
+   "unMember": true,
+   "pop2023": 4008617,
+   "pop2024": 3986627,
+   "continent": "Europe"
+ },
+ {
+   "country": "Cuba",
+   "unMember": true,
+   "pop2023": 11194449,
+   "pop2024": 11174587,
+   "continent": "North America"
+ },
+ {
+   "country": "Curacao",
+   "unMember": false,
+   "pop2023": 192077,
+   "pop2024": 192965,
+   "continent": "North America"
+ },
+ {
+   "country": "Cyprus",
+   "unMember": true,
+   "pop2023": 1260138,
+   "pop2024": 1268467,
+   "continent": "Europe"
+ },
+ {
+   "country": "Czech Republic",
+   "unMember": true,
+   "pop2023": 10495295,
+   "pop2024": 10503734,
+   "continent": "Europe"
+ },
+ {
+   "country": "Denmark",
+   "unMember": true,
+   "pop2023": 5910913,
+   "pop2024": 5939695,
+   "continent": "Europe"
+ },
+ {
+   "country": "Djibouti",
+   "unMember": true,
+   "pop2023": 1136455,
+   "pop2024": 1152329,
+   "continent": "Africa"
+ },
+ {
+   "country": "Dominica",
+   "unMember": true,
+   "pop2023": 73040,
+   "pop2024": 73368,
+   "continent": "North America"
+ },
+ {
+   "country": "Dominican Republic",
+   "unMember": true,
+   "pop2023": 11332972,
+   "pop2024": 11434005,
+   "continent": "North America"
+ },
+ {
+   "country": "DR Congo",
+   "unMember": true,
+   "pop2023": 102262808,
+   "pop2024": 105625114,
+   "continent": "Africa"
+ },
+ {
+   "country": "Ecuador",
+   "unMember": true,
+   "pop2023": 18190484,
+   "pop2024": 18377367,
+   "continent": "South America"
+ },
+ {
+   "country": "Egypt",
+   "unMember": true,
+   "pop2023": 112716598,
+   "pop2024": 114484252,
+   "continent": "Africa"
+ },
+ {
+   "country": "El Salvador",
+   "unMember": true,
+   "pop2023": 6364943,
+   "pop2024": 6396289,
+   "continent": "North America"
+ },
+ {
+   "country": "Equatorial Guinea",
+   "unMember": true,
+   "pop2023": 1714671,
+   "pop2024": 1754993,
+   "continent": "Africa"
+ },
+ {
+   "country": "Eritrea",
+   "unMember": true,
+   "pop2023": 3748901,
+   "pop2024": 3817651,
+   "continent": "Africa"
+ },
+ {
+   "country": "Estonia",
+   "unMember": true,
+   "pop2023": 1322765,
+   "pop2024": 1319041,
+   "continent": "Europe"
+ },
+ {
+   "country": "Eswatini",
+   "unMember": true,
+   "pop2023": 1210822,
+   "pop2024": 1222075,
+   "continent": "Africa"
+ },
+ {
+   "country": "Ethiopia",
+   "unMember": true,
+   "pop2023": 126527060,
+   "pop2024": 129719719,
+   "continent": "Africa"
+ },
+ {
+   "country": "Falkland Islands",
+   "unMember": false,
+   "pop2023": 3791,
+   "pop2024": 3803,
+   "continent": "South America"
+ },
+ {
+   "country": "Faroe Islands",
+   "unMember": false,
+   "pop2023": 53270,
+   "pop2024": 53444,
+   "continent": "Europe"
+ },
+ {
+   "country": "Fiji",
+   "unMember": true,
+   "pop2023": 936375,
+   "pop2024": 943072,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Finland",
+   "unMember": true,
+   "pop2023": 5545475,
+   "pop2024": 5549886,
+   "continent": "Europe"
+ },
+ {
+   "country": "France",
+   "unMember": true,
+   "pop2023": 64756584,
+   "pop2024": 64881830,
+   "continent": "Europe"
+ },
+ {
+   "country": "French Guiana",
+   "unMember": false,
+   "pop2023": 312155,
+   "pop2024": 319796,
+   "continent": "South America"
+ },
+ {
+   "country": "French Polynesia",
+   "unMember": false,
+   "pop2023": 308872,
+   "pop2024": 311383,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Gabon",
+   "unMember": true,
+   "pop2023": 2436566,
+   "pop2024": 2484557,
+   "continent": "Africa"
+ },
+ {
+   "country": "Gambia",
+   "unMember": true,
+   "pop2023": 2773168,
+   "pop2024": 2841803,
+   "continent": "Africa"
+ },
+ {
+   "country": "Georgia",
+   "unMember": true,
+   "pop2023": 3728282,
+   "pop2024": 3717425,
+   "continent": "Asia"
+ },
+ {
+   "country": "Germany",
+   "unMember": true,
+   "pop2023": 83294633,
+   "pop2024": 83252474,
+   "continent": "Europe"
+ },
+ {
+   "country": "Ghana",
+   "unMember": true,
+   "pop2023": 34121985,
+   "pop2024": 34777522,
+   "continent": "Africa"
+ },
+ {
+   "country": "Gibraltar",
+   "unMember": false,
+   "pop2023": 32688,
+   "pop2024": 32718,
+   "continent": "Europe"
+ },
+ {
+   "country": "Greece",
+   "unMember": true,
+   "pop2023": 10341277,
+   "pop2024": 10302720,
+   "continent": "Europe"
+ },
+ {
+   "country": "Greenland",
+   "unMember": false,
+   "pop2023": 56643,
+   "pop2024": 56789,
+   "continent": "North America"
+ },
+ {
+   "country": "Grenada",
+   "unMember": true,
+   "pop2023": 126183,
+   "pop2024": 126887,
+   "continent": "North America"
+ },
+ {
+   "country": "Guadeloupe",
+   "unMember": false,
+   "pop2023": 395839,
+   "pop2024": 396346,
+   "continent": "North America"
+ },
+ {
+   "country": "Guam",
+   "unMember": false,
+   "pop2023": 172952,
+   "pop2024": 174114,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Guatemala",
+   "unMember": true,
+   "pop2023": 18092026,
+   "pop2024": 18358430,
+   "continent": "North America"
+ },
+ {
+   "country": "Guernsey",
+   "unMember": false,
+   "pop2023": 63544,
+   "pop2024": 63788,
+   "continent": "Europe"
+ },
+ {
+   "country": "Guinea",
+   "unMember": true,
+   "pop2023": 14190612,
+   "pop2024": 14528770,
+   "continent": "Africa"
+ },
+ {
+   "country": "Guinea-Bissau",
+   "unMember": true,
+   "pop2023": 2150842,
+   "pop2024": 2197149,
+   "continent": "Africa"
+ },
+ {
+   "country": "Guyana",
+   "unMember": true,
+   "pop2023": 813834,
+   "pop2024": 819594,
+   "continent": "South America"
+ },
+ {
+   "country": "Haiti",
+   "unMember": true,
+   "pop2023": 11724763,
+   "pop2024": 11867030,
+   "continent": "North America"
+ },
+ {
+   "country": "Honduras",
+   "unMember": true,
+   "pop2023": 10593798,
+   "pop2024": 10759406,
+   "continent": "North America"
+ },
+ {
+   "country": "Hong Kong",
+   "unMember": false,
+   "pop2023": 7491609,
+   "pop2024": 7496681,
+   "continent": "Asia"
+ },
+ {
+   "country": "Hungary",
+   "unMember": true,
+   "pop2023": 10156239,
+   "pop2024": 9994993,
+   "continent": "Europe"
+ },
+ {
+   "country": "Iceland",
+   "unMember": true,
+   "pop2023": 375318,
+   "pop2024": 377689,
+   "continent": "Europe"
+ },
+ {
+   "country": "India",
+   "unMember": true,
+   "pop2023": 1428627663,
+   "pop2024": 1441719852,
+   "continent": "Asia"
+ },
+ {
+   "country": "Indonesia",
+   "unMember": true,
+   "pop2023": 277534122,
+   "pop2024": 279798049,
+   "continent": "Asia"
+ },
+ {
+   "country": "Iran",
+   "unMember": true,
+   "pop2023": 89172767,
+   "pop2024": 89809781,
+   "continent": "Asia"
+ },
+ {
+   "country": "Iraq",
+   "unMember": true,
+   "pop2023": 45504560,
+   "pop2024": 46523657,
+   "continent": "Asia"
+ },
+ {
+   "country": "Ireland",
+   "unMember": true,
+   "pop2023": 5056935,
+   "pop2024": 5089478,
+   "continent": "Europe"
+ },
+ {
+   "country": "Isle of Man",
+   "unMember": false,
+   "pop2023": 84710,
+   "pop2024": 84904,
+   "continent": "Europe"
+ },
+ {
+   "country": "Israel",
+   "unMember": true,
+   "pop2023": 9174520,
+   "pop2024": 9311652,
+   "continent": "Asia"
+ },
+ {
+   "country": "Italy",
+   "unMember": true,
+   "pop2023": 58870762,
+   "pop2024": 58697744,
+   "continent": "Europe"
+ },
+ {
+   "country": "Ivory Coast",
+   "unMember": true,
+   "pop2023": 28873034,
+   "pop2024": 29603302,
+   "continent": "Africa"
+ },
+ {
+   "country": "Jamaica",
+   "unMember": true,
+   "pop2023": 2825544,
+   "pop2024": 2824738,
+   "continent": "North America"
+ },
+ {
+   "country": "Japan",
+   "unMember": true,
+   "pop2023": 123294513,
+   "pop2024": 122631432,
+   "continent": "Asia"
+ },
+ {
+   "country": "Jersey",
+   "unMember": false,
+   "pop2023": 111802,
+   "pop2024": 112843,
+   "continent": "Europe"
+ },
+ {
+   "country": "Jordan",
+   "unMember": true,
+   "pop2023": 11337052,
+   "pop2024": 11384922,
+   "continent": "Asia"
+ },
+ {
+   "country": "Kazakhstan",
+   "unMember": true,
+   "pop2023": 19606633,
+   "pop2024": 19828165,
+   "continent": "Asia"
+ },
+ {
+   "country": "Kenya",
+   "unMember": true,
+   "pop2023": 55100586,
+   "pop2024": 56203030,
+   "continent": "Africa"
+ },
+ {
+   "country": "Kiribati",
+   "unMember": true,
+   "pop2023": 133515,
+   "pop2024": 135763,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Kuwait",
+   "unMember": true,
+   "pop2023": 4310108,
+   "pop2024": 4349380,
+   "continent": "Asia"
+ },
+ {
+   "country": "Kyrgyzstan",
+   "unMember": true,
+   "pop2023": 6735347,
+   "pop2024": 6839606,
+   "continent": "Asia"
+ },
+ {
+   "country": "Laos",
+   "unMember": true,
+   "pop2023": 7633779,
+   "pop2024": 7736681,
+   "continent": "Asia"
+ },
+ {
+   "country": "Latvia",
+   "unMember": true,
+   "pop2023": 1830211,
+   "pop2024": 1810240,
+   "continent": "Europe"
+ },
+ {
+   "country": "Lebanon",
+   "unMember": true,
+   "pop2023": 5353930,
+   "pop2024": 5219044,
+   "continent": "Asia"
+ },
+ {
+   "country": "Lesotho",
+   "unMember": true,
+   "pop2023": 2330318,
+   "pop2024": 2356083,
+   "continent": "Africa"
+ },
+ {
+   "country": "Liberia",
+   "unMember": true,
+   "pop2023": 5418377,
+   "pop2024": 5536949,
+   "continent": "Africa"
+ },
+ {
+   "country": "Libya",
+   "unMember": true,
+   "pop2023": 6888388,
+   "pop2024": 6964197,
+   "continent": "Africa"
+ },
+ {
+   "country": "Liechtenstein",
+   "unMember": true,
+   "pop2023": 39584,
+   "pop2024": 39822,
+   "continent": "Europe"
+ },
+ {
+   "country": "Lithuania",
+   "unMember": true,
+   "pop2023": 2718352,
+   "pop2024": 2692798,
+   "continent": "Europe"
+ },
+ {
+   "country": "Luxembourg",
+   "unMember": true,
+   "pop2023": 654768,
+   "pop2024": 661594,
+   "continent": "Europe"
+ },
+ {
+   "country": "Macau",
+   "unMember": false,
+   "pop2023": 704149,
+   "pop2024": 713082,
+   "continent": "Asia"
+ },
+ {
+   "country": "Madagascar",
+   "unMember": true,
+   "pop2023": 30325732,
+   "pop2024": 31056610,
+   "continent": "Africa"
+ },
+ {
+   "country": "Malawi",
+   "unMember": true,
+   "pop2023": 20931751,
+   "pop2024": 21475962,
+   "continent": "Africa"
+ },
+ {
+   "country": "Malaysia",
+   "unMember": true,
+   "pop2023": 34308525,
+   "pop2024": 34671895,
+   "continent": "Asia"
+ },
+ {
+   "country": "Maldives",
+   "unMember": true,
+   "pop2023": 521021,
+   "pop2024": 517887,
+   "continent": "Asia"
+ },
+ {
+   "country": "Mali",
+   "unMember": true,
+   "pop2023": 23293698,
+   "pop2024": 24015789,
+   "continent": "Africa"
+ },
+ {
+   "country": "Malta",
+   "unMember": true,
+   "pop2023": 535064,
+   "pop2024": 536740,
+   "continent": "Europe"
+ },
+ {
+   "country": "Marshall Islands",
+   "unMember": true,
+   "pop2023": 41996,
+   "pop2024": 42415,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Martinique",
+   "unMember": false,
+   "pop2023": 366981,
+   "pop2024": 366416,
+   "continent": "North America"
+ },
+ {
+   "country": "Mauritania",
+   "unMember": true,
+   "pop2023": 4862989,
+   "pop2024": 4993922,
+   "continent": "Africa"
+ },
+ {
+   "country": "Mauritius",
+   "unMember": true,
+   "pop2023": 1300557,
+   "pop2024": 1301978,
+   "continent": "Africa"
+ },
+ {
+   "country": "Mayotte",
+   "unMember": false,
+   "pop2023": 335995,
+   "pop2024": 345996,
+   "continent": "Africa"
+ },
+ {
+   "country": "Mexico",
+   "unMember": true,
+   "pop2023": 128455567,
+   "pop2024": 129388467,
+   "continent": "North America"
+ },
+ {
+   "country": "Micronesia",
+   "unMember": true,
+   "pop2023": 115224,
+   "pop2024": 116300,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Moldova",
+   "unMember": true,
+   "pop2023": 3435931,
+   "pop2024": 3329865,
+   "continent": "Europe"
+ },
+ {
+   "country": "Monaco",
+   "unMember": true,
+   "pop2023": 36297,
+   "pop2024": 36157,
+   "continent": "Europe"
+ },
+ {
+   "country": "Mongolia",
+   "unMember": true,
+   "pop2023": 3447157,
+   "pop2024": 3493629,
+   "continent": "Asia"
+ },
+ {
+   "country": "Montenegro",
+   "unMember": true,
+   "pop2023": 626485,
+   "pop2024": 626102,
+   "continent": "Europe"
+ },
+ {
+   "country": "Montserrat",
+   "unMember": false,
+   "pop2023": 4386,
+   "pop2024": 4372,
+   "continent": "North America"
+ },
+ {
+   "country": "Morocco",
+   "unMember": true,
+   "pop2023": 37840044,
+   "pop2024": 38211459,
+   "continent": "Africa"
+ },
+ {
+   "country": "Mozambique",
+   "unMember": true,
+   "pop2023": 33897354,
+   "pop2024": 34858402,
+   "continent": "Africa"
+ },
+ {
+   "country": "Myanmar",
+   "unMember": true,
+   "pop2023": 54577997,
+   "pop2024": 54964694,
+   "continent": "Asia"
+ },
+ {
+   "country": "Namibia",
+   "unMember": true,
+   "pop2023": 2604172,
+   "pop2024": 2645805,
+   "continent": "Africa"
+ },
+ {
+   "country": "Nauru",
+   "unMember": true,
+   "pop2023": 12780,
+   "pop2024": 12884,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Nepal",
+   "unMember": true,
+   "pop2023": 30896590,
+   "pop2024": 31240315,
+   "continent": "Asia"
+ },
+ {
+   "country": "Netherlands",
+   "unMember": true,
+   "pop2023": 17618299,
+   "pop2024": 17671125,
+   "continent": "Europe"
+ },
+ {
+   "country": "New Caledonia",
+   "unMember": false,
+   "pop2023": 292991,
+   "pop2024": 295966,
+   "continent": "Oceania"
+ },
+ {
+   "country": "New Zealand",
+   "unMember": true,
+   "pop2023": 5228100,
+   "pop2024": 5269939,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Nicaragua",
+   "unMember": true,
+   "pop2023": 7046310,
+   "pop2024": 7142529,
+   "continent": "North America"
+ },
+ {
+   "country": "Niger",
+   "unMember": true,
+   "pop2023": 27202843,
+   "pop2024": 28238972,
+   "continent": "Africa"
+ },
+ {
+   "country": "Nigeria",
+   "unMember": true,
+   "pop2023": 223804632,
+   "pop2024": 229152217,
+   "continent": "Africa"
+ },
+ {
+   "country": "Niue",
+   "unMember": false,
+   "pop2023": 1935,
+   "pop2024": 1935,
+   "continent": "Oceania"
+ },
+ {
+   "country": "North Korea",
+   "unMember": true,
+   "pop2023": 26160821,
+   "pop2024": 26244582,
+   "continent": "Asia"
+ },
+ {
+   "country": "North Macedonia",
+   "unMember": true,
+   "pop2023": 2085679,
+   "pop2024": 2082706,
+   "continent": "Europe"
+ },
+ {
+   "country": "Northern Mariana Islands",
+   "unMember": false,
+   "pop2023": 49796,
+   "pop2024": 50025,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Norway",
+   "unMember": true,
+   "pop2023": 5474360,
+   "pop2024": 5514477,
+   "continent": "Europe"
+ },
+ {
+   "country": "Oman",
+   "unMember": true,
+   "pop2023": 4644384,
+   "pop2024": 4713553,
+   "continent": "Asia"
+ },
+ {
+   "country": "Pakistan",
+   "unMember": true,
+   "pop2023": 240485658,
+   "pop2024": 245209815,
+   "continent": "Asia"
+ },
+ {
+   "country": "Palau",
+   "unMember": true,
+   "pop2023": 18058,
+   "pop2024": 18051,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Palestine",
+   "unMember": true,
+   "pop2023": 5371230,
+   "pop2024": 5494963,
+   "continent": "Asia"
+ },
+ {
+   "country": "Panama",
+   "unMember": true,
+   "pop2023": 4468087,
+   "pop2024": 4527961,
+   "continent": "North America"
+ },
+ {
+   "country": "Papua New Guinea",
+   "unMember": true,
+   "pop2023": 10329931,
+   "pop2024": 10515788,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Paraguay",
+   "unMember": true,
+   "pop2023": 6861524,
+   "pop2024": 6947270,
+   "continent": "South America"
+ },
+ {
+   "country": "Peru",
+   "unMember": true,
+   "pop2023": 34352719,
+   "pop2024": 34683444,
+   "continent": "South America"
+ },
+ {
+   "country": "Philippines",
+   "unMember": true,
+   "pop2023": 117337368,
+   "pop2024": 119106224,
+   "continent": "Asia"
+ },
+ {
+   "country": "Poland",
+   "unMember": true,
+   "pop2023": 41026067,
+   "pop2024": 40221726,
+   "continent": "Europe"
+ },
+ {
+   "country": "Portugal",
+   "unMember": true,
+   "pop2023": 10247605,
+   "pop2024": 10223349,
+   "continent": "Europe"
+ },
+ {
+   "country": "Puerto Rico",
+   "unMember": false,
+   "pop2023": 3260314,
+   "pop2024": 3268802,
+   "continent": "North America"
+ },
+ {
+   "country": "Qatar",
+   "unMember": true,
+   "pop2023": 2716391,
+   "pop2024": 2737061,
+   "continent": "Asia"
+ },
+ {
+   "country": "Republic of the Congo",
+   "unMember": true,
+   "pop2023": 6106869,
+   "pop2024": 6244547,
+   "continent": "Africa"
+ },
+ {
+   "country": "Reunion",
+   "unMember": false,
+   "pop2023": 981796,
+   "pop2024": 989350,
+   "continent": "Africa"
+ },
+ {
+   "country": "Romania",
+   "unMember": true,
+   "pop2023": 19892812,
+   "pop2024": 19618996,
+   "continent": "Europe"
+ },
+ {
+   "country": "Russia",
+   "unMember": true,
+   "pop2023": 144444359,
+   "pop2024": 143957079,
+   "continent": "Europe"
+ },
+ {
+   "country": "Rwanda",
+   "unMember": true,
+   "pop2023": 14094683,
+   "pop2024": 14414910,
+   "continent": "Africa"
+ },
+ {
+   "country": "Saint Barthelemy",
+   "unMember": false,
+   "pop2023": 10994,
+   "pop2024": 11019,
+   "continent": "North America"
+ },
+ {
+   "country": "Saint Kitts and Nevis",
+   "unMember": true,
+   "pop2023": 47755,
+   "pop2024": 47847,
+   "continent": "North America"
+ },
+ {
+   "country": "Saint Lucia",
+   "unMember": true,
+   "pop2023": 180251,
+   "pop2024": 180805,
+   "continent": "North America"
+ },
+ {
+   "country": "Saint Martin",
+   "unMember": false,
+   "pop2023": 32077,
+   "pop2024": 32337,
+   "continent": "North America"
+ },
+ {
+   "country": "Saint Pierre and Miquelon",
+   "unMember": false,
+   "pop2023": 5840,
+   "pop2024": 5815,
+   "continent": "North America"
+ },
+ {
+   "country": "Saint Vincent and the Grenadines",
+   "unMember": true,
+   "pop2023": 103698,
+   "pop2024": 103683,
+   "continent": "North America"
+ },
+ {
+   "country": "Samoa",
+   "unMember": true,
+   "pop2023": 225681,
+   "pop2024": 228966,
+   "continent": "Oceania"
+ },
+ {
+   "country": "San Marino",
+   "unMember": true,
+   "pop2023": 33642,
+   "pop2024": 33614,
+   "continent": "Europe"
+ },
+ {
+   "country": "Sao Tome and Principe",
+   "unMember": true,
+   "pop2023": 231856,
+   "pop2024": 236381,
+   "continent": "Africa"
+ },
+ {
+   "country": "Saudi Arabia",
+   "unMember": true,
+   "pop2023": 36947025,
+   "pop2024": 37473929,
+   "continent": "Asia"
+ },
+ {
+   "country": "Senegal",
+   "unMember": true,
+   "pop2023": 17763163,
+   "pop2024": 18221567,
+   "continent": "Africa"
+ },
+ {
+   "country": "Serbia",
+   "unMember": true,
+   "pop2023": 7149077,
+   "pop2024": 7097028,
+   "continent": "Europe"
+ },
+ {
+   "country": "Seychelles",
+   "unMember": true,
+   "pop2023": 107660,
+   "pop2024": 108263,
+   "continent": "Africa"
+ },
+ {
+   "country": "Sierra Leone",
+   "unMember": true,
+   "pop2023": 8791092,
+   "pop2024": 8977972,
+   "continent": "Africa"
+ },
+ {
+   "country": "Singapore",
+   "unMember": true,
+   "pop2023": 6014723,
+   "pop2024": 6052709,
+   "continent": "Asia"
+ },
+ {
+   "country": "Sint Maarten",
+   "unMember": false,
+   "pop2023": 44222,
+   "pop2024": 44309,
+   "continent": "North America"
+ },
+ {
+   "country": "Slovakia",
+   "unMember": true,
+   "pop2023": 5795199,
+   "pop2024": 5702832,
+   "continent": "Europe"
+ },
+ {
+   "country": "Slovenia",
+   "unMember": true,
+   "pop2023": 2119675,
+   "pop2024": 2118965,
+   "continent": "Europe"
+ },
+ {
+   "country": "Solomon Islands",
+   "unMember": true,
+   "pop2023": 740424,
+   "pop2024": 756673,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Somalia",
+   "unMember": true,
+   "pop2023": 18143378,
+   "pop2024": 18706922,
+   "continent": "Africa"
+ },
+ {
+   "country": "South Africa",
+   "unMember": true,
+   "pop2023": 60414495,
+   "pop2024": 61020221,
+   "continent": "Africa"
+ },
+ {
+   "country": "South Korea",
+   "unMember": true,
+   "pop2023": 51784059,
+   "pop2024": 51741963,
+   "continent": "Asia"
+ },
+ {
+   "country": "South Sudan",
+   "unMember": true,
+   "pop2023": 11088796,
+   "pop2024": 11277092,
+   "continent": "Africa"
+ },
+ {
+   "country": "Spain",
+   "unMember": true,
+   "pop2023": 47519628,
+   "pop2024": 47473373,
+   "continent": "Europe"
+ },
+ {
+   "country": "Sri Lanka",
+   "unMember": true,
+   "pop2023": 21893579,
+   "pop2024": 21949268,
+   "continent": "Asia"
+ },
+ {
+   "country": "Sudan",
+   "unMember": true,
+   "pop2023": 48109006,
+   "pop2024": 49358228,
+   "continent": "Africa"
+ },
+ {
+   "country": "Suriname",
+   "unMember": true,
+   "pop2023": 623236,
+   "pop2024": 628785,
+   "continent": "South America"
+ },
+ {
+   "country": "Sweden",
+   "unMember": true,
+   "pop2023": 10612086,
+   "pop2024": 10673669,
+   "continent": "Europe"
+ },
+ {
+   "country": "Switzerland",
+   "unMember": true,
+   "pop2023": 8796669,
+   "pop2024": 8851431,
+   "continent": "Europe"
+ },
+ {
+   "country": "Syria",
+   "unMember": true,
+   "pop2023": 23227014,
+   "pop2024": 24348053,
+   "continent": "Asia"
+ },
+ {
+   "country": "Taiwan",
+   "unMember": false,
+   "pop2023": 23923276,
+   "pop2024": 23950214,
+   "continent": "Asia"
+ },
+ {
+   "country": "Tajikistan",
+   "unMember": true,
+   "pop2023": 10143543,
+   "pop2024": 10331513,
+   "continent": "Asia"
+ },
+ {
+   "country": "Tanzania",
+   "unMember": true,
+   "pop2023": 67438106,
+   "pop2024": 69419073,
+   "continent": "Africa"
+ },
+ {
+   "country": "Thailand",
+   "unMember": true,
+   "pop2023": 71801279,
+   "pop2024": 71885799,
+   "continent": "Asia"
+ },
+ {
+   "country": "Timor-Leste",
+   "unMember": true,
+   "pop2023": 1360596,
+   "pop2024": 1379883,
+   "continent": "Asia"
+ },
+ {
+   "country": "Togo",
+   "unMember": true,
+   "pop2023": 9053799,
+   "pop2024": 9260864,
+   "continent": "Africa"
+ },
+ {
+   "country": "Tokelau",
+   "unMember": false,
+   "pop2023": 1893,
+   "pop2024": 1915,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Tonga",
+   "unMember": true,
+   "pop2023": 107773,
+   "pop2024": 108683,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Trinidad and Tobago",
+   "unMember": true,
+   "pop2023": 1534937,
+   "pop2024": 1538200,
+   "continent": "North America"
+ },
+ {
+   "country": "Tunisia",
+   "unMember": true,
+   "pop2023": 12458223,
+   "pop2024": 12564689,
+   "continent": "Africa"
+ },
+ {
+   "country": "Turkey",
+   "unMember": true,
+   "pop2023": 85816199,
+   "pop2024": 86260417,
+   "continent": "Asia"
+ },
+ {
+   "country": "Turkmenistan",
+   "unMember": true,
+   "pop2023": 6516100,
+   "pop2024": 6598071,
+   "continent": "Asia"
+ },
+ {
+   "country": "Turks and Caicos Islands",
+   "unMember": false,
+   "pop2023": 46062,
+   "pop2024": 46431,
+   "continent": "North America"
+ },
+ {
+   "country": "Tuvalu",
+   "unMember": true,
+   "pop2023": 11396,
+   "pop2024": 11478,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Uganda",
+   "unMember": true,
+   "pop2023": 48582334,
+   "pop2024": 49924252,
+   "continent": "Africa"
+ },
+ {
+   "country": "Ukraine",
+   "unMember": true,
+   "pop2023": 36744634,
+   "pop2024": 37937821,
+   "continent": "Europe"
+ },
+ {
+   "country": "United Arab Emirates",
+   "unMember": true,
+   "pop2023": 9516871,
+   "pop2024": 9591853,
+   "continent": "Asia"
+ },
+ {
+   "country": "United Kingdom",
+   "unMember": true,
+   "pop2023": 67736802,
+   "pop2024": 67961439,
+   "continent": "Europe"
+ },
+ {
+   "country": "United States",
+   "unMember": true,
+   "pop2023": 339996563,
+   "pop2024": 341814420,
+   "continent": "North America"
+ },
+ {
+   "country": "United States Virgin Islands",
+   "unMember": false,
+   "pop2023": 98750,
+   "pop2024": 98055,
+   "continent": "North America"
+ },
+ {
+   "country": "Uruguay",
+   "unMember": true,
+   "pop2023": 3423108,
+   "pop2024": 3423316,
+   "continent": "South America"
+ },
+ {
+   "country": "Uzbekistan",
+   "unMember": true,
+   "pop2023": 35163944,
+   "pop2024": 35673804,
+   "continent": "Asia"
+ },
+ {
+   "country": "Vanuatu",
+   "unMember": true,
+   "pop2023": 334506,
+   "pop2024": 342325,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Vatican City",
+   "unMember": true,
+   "pop2023": 764,
+   "pop2024": 764,
+   "continent": "Europe"
+ },
+ {
+   "country": "Venezuela",
+   "unMember": true,
+   "pop2023": 28838499,
+   "pop2024": 29395334,
+   "continent": "South America"
+ },
+ {
+   "country": "Vietnam",
+   "unMember": true,
+   "pop2023": 98858950,
+   "pop2024": 99497680,
+   "continent": "Asia"
+ },
+ {
+   "country": "Wallis and Futuna",
+   "unMember": false,
+   "pop2023": 11502,
+   "pop2024": 11439,
+   "continent": "Oceania"
+ },
+ {
+   "country": "Western Sahara",
+   "unMember": false,
+   "pop2023": 587259,
+   "pop2024": 598385,
+   "continent": "Africa"
+ },
+ {
+   "country": "Yemen",
+   "unMember": true,
+   "pop2023": 34449825,
+   "pop2024": 35219853,
+   "continent": "Asia"
+ },
+ {
+   "country": "Zambia",
+   "unMember": true,
+   "pop2023": 20569737,
+   "pop2024": 21134695,
+   "continent": "Africa"
+ },
+ {
+   "country": "Zimbabwe",
+   "unMember": true,
+   "pop2023": 16665409,
+   "pop2024": 17020321,
+   "continent": "Africa"
+ }
+]
