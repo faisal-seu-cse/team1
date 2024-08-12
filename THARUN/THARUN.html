@@ -16,7 +16,7 @@
         background-color: #2e67d6;
       }
 
-      .tooltip {
+      .tooltips {
         font-size: 12px;
         padding: 10px;
         color: #ffffff;
@@ -289,10 +289,13 @@
 
       const total = d3.sum(data, (d) => d.population);
 
-      const tooltip = d3.select("body").append("div").attr("class", "tooltip");
+      const tooltips = d3
+        .select("body")
+        .append("div")
+        .attr("class", "tooltips");
 
       const mouseover = function (d) {
-        tooltip.style("opacity", 1);
+        tooltips.style("opacity", 1);
         d3.select(this).style("opacity", 0.5);
       };
 
@@ -306,14 +309,14 @@
           "Population Percentage : " +
           percent +
           "%";
-        tooltip
+        tooltips
           .html(str)
           .style("top", event.pageY - 10 + "px")
           .style("left", event.pageX + 10 + "px");
       };
 
       const mouseleave = function (d) {
-        tooltip.style("opacity", 0);
+        tooltips.style("opacity", 0);
         d3.select(this).style("stroke", "none").style("opacity", 1);
         d3.select(this).transition().attr("d", arc).attr("stroke", "none");
       };
