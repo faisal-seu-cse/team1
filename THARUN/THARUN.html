@@ -1,251 +1,358 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
-        .tooltip {
-            font-size: 12px;
-            padding: 10px;
-            color: #ffffff;
-            background-color: #353333;
-            box-shadow: 0px 0px 3px 0px #353333;
-        }
+      .navbar {
+        background-color: #2e67d6;
+      }
 
-        .legend_Container {
-            height: 600px;
-            overflow: auto;
-            margin-top: 20%;
-        }
+      .tooltip {
+        font-size: 12px;
+        padding: 10px;
+        color: #ffffff;
+        background-color: #353333;
+        box-shadow: 0px 0px 3px 0px #353333;
+      }
+
+      .legend_Container {
+        height: 600px;
+        overflow: auto;
+        margin-top: 20%;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="../index.html">TEAM-1</a>
+        <div class="nav-wrapper">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item px-3">
+                <a
+                  class="nav-link active"
+                  href="../ARINZE_DANIEL_UZOKWE/ARINZE_DANIEL_UZOKWE.html"
+                >
+                  ARINZE
+                </a>
+              </li>
+              <li class="nav-item px-3">
+                <a
+                  class="nav-link active"
+                  href="../DORCAS_AISEDU/DORCAS_AISEDU.html"
+                >
+                  DORCAS
+                </a>
+              </li>
+              <li class="nav-item px-3">
+                <a
+                  class="nav-link active"
+                  href="../LEENU_SATHEE_DEVI_LORENCE/LEENU_SATHEE_DEVI_LORENCE.html"
+                >
+                  LEENU
+                </a>
+              </li>
+              <li class="nav-item px-3">
+                <a
+                  class="nav-link active"
+                  href="../KHALED_MOHIUDDIN_FAISAL/KHALED_MOHIUDDIN_FAISAL.html"
+                >
+                  FAISAL
+                </a>
+              </li>
+
+              <li class="nav-item px-3">
+                <a class="nav-link active" href="../THARUN/THARUN.html">
+                  THARUN
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
     <div class="container">
-        <h2>POPULATION PIE CHART</h2>
-        <div class="row">
-            <select id="select" onchange="filter()">
-                <option value="" disabled selected> ----------- Filter ----------- </option>
-                <option value="1970">Population of year 1970</option>
-                <option value="1980">Population of year 1980</option>
-                <option value="1990">Population of year 1990</option>
-                <option value="2000">Population of year 2000</option>
-                <option value="2010">Population of year 2010</option>
-                <option value="2023">Population of year 2023</option>
-                <option value="2024">Population of year 2024</option>
-            </select>
-            <select id="select_1" onchange="filter()">
-                <option value="" disabled selected> ----------- Filter Top/Bottom Data By ----------- </option>
-                <option value="bottom_5">Bottom 5</option>
-                <option value="bottom_10">Bottom 10</option>
-                <option value="top_5">Top 5</option>
-                <option value="top_10">Top 10</option>
-            </select>
-            <select id="select_2" onchange="filter_Continent()">
-                <option value="" disabled selected> ----------- Filter Data By Continent ----------- </option>
-                <option value="All">All</option>
-                <option value="Africa">Africa</option>
-                <option value="Asia">Asia</option>
-                <option value="Europe">Europe</option>
-                <option value="North America">North America</option>
-                <option value="Oceania">Oceania</option>
-                <option value="South America">South America</option>
-            </select>
-            <button onclick="clearFilter()">Clear ALL Filters</button>
+      <h2 class="text-primary">POPULATION PIE CHART</h2>
+      <div class="row">
+        <select id="select" onchange="filter()">
+          <option value="" disabled selected>
+            ----------- Filter -----------
+          </option>
+          <option value="1970">Population of year 1970</option>
+          <option value="1980">Population of year 1980</option>
+          <option value="1990">Population of year 1990</option>
+          <option value="2000">Population of year 2000</option>
+          <option value="2010">Population of year 2010</option>
+          <option value="2023">Population of year 2023</option>
+          <option value="2024">Population of year 2024</option>
+        </select>
+        <select id="select_1" onchange="filter()">
+          <option value="" disabled selected>
+            ----------- Filter Top/Bottom Data By -----------
+          </option>
+          <option value="bottom_5">Bottom 5</option>
+          <option value="bottom_10">Bottom 10</option>
+          <option value="top_5">Top 5</option>
+          <option value="top_10">Top 10</option>
+        </select>
+        <select id="select_2" onchange="filter_Continent()">
+          <option value="" disabled selected>
+            ----------- Filter Data By Continent -----------
+          </option>
+          <option value="All">All</option>
+          <option value="Africa">Africa</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="North America">North America</option>
+          <option value="Oceania">Oceania</option>
+          <option value="South America">South America</option>
+        </select>
+        <button onclick="clearFilter()">Clear ALL Filters</button>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="legend_Container" id="legendContainer"></div>
         </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="legend_Container" id="legendContainer"></div>
-            </div>
-            <div class="col-md-9">
-                <div id="chartContainer"></div>
-            </div>
+        <div class="col-md-9">
+          <div id="chartContainer"></div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 
-<script type="text/javascript">
-    const pop1970 = [], pop1980 = [], pop1990 = [], pop2000 = [], pop2010 = [], pop2023 = [], pop2024 = [];
+  <script type="text/javascript">
+    const pop1970 = [],
+      pop1980 = [],
+      pop1990 = [],
+      pop2000 = [],
+      pop2010 = [],
+      pop2023 = [],
+      pop2024 = [];
     const Con_obj = {};
     const Con_arr = [];
 
     d3.json("2024Pop_req (1).json").then(function (data) {
-        data.forEach(function (d) {
-            if (Con_obj[d.continent] === undefined) {
-                Con_obj[d.continent] = [];
-            }
-            Con_obj[d.continent].push({
-                country: d['country'],
-                population: d['pop 1970'],
-                continent: d['continent']
-            });
-
-            pop1970.push({ country: d['country'], population: d['pop 1970'] });
-            pop1980.push({ country: d['country'], population: d['pop1980'] });
-            pop1990.push({ country: d['country'], population: d['pop 1990'] });
-            pop2000.push({ country: d['country'], population: d['pop2000'] });
-            pop2010.push({ country: d['country'], population: d['pop2010'] });
-            pop2023.push({ country: d['country'], population: d['pop2023'] });
-            pop2024.push({ country: d['country'], population: d['pop2024'] });
+      data.forEach(function (d) {
+        if (Con_obj[d.continent] === undefined) {
+          Con_obj[d.continent] = [];
+        }
+        Con_obj[d.continent].push({
+          country: d["country"],
+          population: d["pop 1970"],
+          continent: d["continent"],
         });
 
-        Object.keys(Con_obj).forEach(function (continent) {
-            const countries = Con_obj[continent];
-            Con_arr.push(...countries);
-        });
+        pop1970.push({ country: d["country"], population: d["pop 1970"] });
+        pop1980.push({ country: d["country"], population: d["pop1980"] });
+        pop1990.push({ country: d["country"], population: d["pop 1990"] });
+        pop2000.push({ country: d["country"], population: d["pop2000"] });
+        pop2010.push({ country: d["country"], population: d["pop2010"] });
+        pop2023.push({ country: d["country"], population: d["pop2023"] });
+        pop2024.push({ country: d["country"], population: d["pop2024"] });
+      });
 
-        drawPieChart(pop1970);
+      Object.keys(Con_obj).forEach(function (continent) {
+        const countries = Con_obj[continent];
+        Con_arr.push(...countries);
+      });
+
+      drawPieChart(pop1970);
     });
 
     function filter() {
-        const year = document.getElementById("select").value;
-        const type = document.getElementById("select_1").value;
+      const year = document.getElementById("select").value;
+      const type = document.getElementById("select_1").value;
 
-        let data = [];
+      let data = [];
 
-        switch (year) {
-            case '1970':
-                data = pop1970;
-                break;
-            case '1980':
-                data = pop1980;
-                break;
-            case '1990':
-                data = pop1990;
-                break;
-            case '2000':
-                data = pop2000;
-                break;
-            case '2010':
-                data = pop2010;
-                break;
-            case '2023':
-                data = pop2023;
-                break;
-            case '2024':
-                data = pop2024;
-                break;
+      switch (year) {
+        case "1970":
+          data = pop1970;
+          break;
+        case "1980":
+          data = pop1980;
+          break;
+        case "1990":
+          data = pop1990;
+          break;
+        case "2000":
+          data = pop2000;
+          break;
+        case "2010":
+          data = pop2010;
+          break;
+        case "2023":
+          data = pop2023;
+          break;
+        case "2024":
+          data = pop2024;
+          break;
+      }
+
+      if (type) {
+        data = [...data];
+        if (type.includes("bottom")) {
+          data.sort(
+            (a, b) => parseFloat(a.population) - parseFloat(b.population)
+          );
+        } else if (type.includes("top")) {
+          data.sort(
+            (a, b) => parseFloat(b.population) - parseFloat(a.population)
+          );
         }
+        data = type.includes("5") ? data.slice(0, 5) : data.slice(0, 10);
+      }
 
-        if (type) {
-            data = [...data];
-            if (type.includes('bottom')) {
-                data.sort((a, b) => parseFloat(a.population) - parseFloat(b.population));
-            } else if (type.includes('top')) {
-                data.sort((a, b) => parseFloat(b.population) - parseFloat(a.population));
-            }
-            data = type.includes('5') ? data.slice(0, 5) : data.slice(0, 10);
-        }
-
-        if (data.length) {
-            drawPieChart(data);
-        }
+      if (data.length) {
+        drawPieChart(data);
+      }
     }
 
     function clearFilter() {
-        drawPieChart(pop1970);
-        document.getElementById("select").selectedIndex = 0;
-        document.getElementById("select_1").selectedIndex = 0;
-        document.getElementById("select_2").selectedIndex = 0;
+      drawPieChart(pop1970);
+      document.getElementById("select").selectedIndex = 0;
+      document.getElementById("select_1").selectedIndex = 0;
+      document.getElementById("select_2").selectedIndex = 0;
     }
 
     function filter_Continent() {
-        const continent = document.getElementById("select_2").value;
-        let data = [];
+      const continent = document.getElementById("select_2").value;
+      let data = [];
 
-        if (continent === 'All') {
-            data = Con_arr;
-        } else {
-            data = Con_arr.filter(d => d.continent === continent);
-        }
+      if (continent === "All") {
+        data = Con_arr;
+      } else {
+        data = Con_arr.filter((d) => d.continent === continent);
+      }
 
-        if (data.length) {
-            drawPieChart(data);
-        }
+      if (data.length) {
+        drawPieChart(data);
+      }
     }
 
     function drawPieChart(data) {
-        const chartContainer = d3.select("#chartContainer");
-        const legendContainer = d3.select("#legendContainer");
+      const chartContainer = d3.select("#chartContainer");
+      const legendContainer = d3.select("#legendContainer");
 
-        chartContainer.html('');
-        legendContainer.html('');
+      chartContainer.html("");
+      legendContainer.html("");
 
-        const margin = 20, height = 400, width = 400;
-        const radius = Math.min(width, height) / 2 - margin;
+      const margin = 20,
+        height = 400,
+        width = 400;
+      const radius = Math.min(width, height) / 2 - margin;
 
-        const svg = chartContainer.append("svg")
-            .attr("width", "100%")
-            .attr("height", "100%")
-            .attr("viewBox", "0 0 450 450")
-            .attr("preserveAspectRatio", "xMinYMin")
-            .append("g")
-            .attr("transform", `translate(${width / 2}, ${height / 2})`);
+      const svg = chartContainer
+        .append("svg")
+        .attr("width", "100%")
+        .attr("height", "100%")
+        .attr("viewBox", "0 0 450 450")
+        .attr("preserveAspectRatio", "xMinYMin")
+        .append("g")
+        .attr("transform", `translate(${width / 2}, ${height / 2})`);
 
-        const color = d3.scaleOrdinal(d3.schemeAccent);
+      const color = d3.scaleOrdinal(d3.schemeAccent);
 
-        const pie = d3.pie().value(d => +d.population).sort(null);
-        const dataPrepared = pie(data);
+      const pie = d3
+        .pie()
+        .value((d) => +d.population)
+        .sort(null);
+      const dataPrepared = pie(data);
 
-        const arc = d3.arc().innerRadius(0).outerRadius(radius);
-        const outerArc = d3.arc().innerRadius(0).outerRadius(radius + 10);
+      const arc = d3.arc().innerRadius(0).outerRadius(radius);
+      const outerArc = d3
+        .arc()
+        .innerRadius(0)
+        .outerRadius(radius + 10);
 
-        const total = d3.sum(data, d => d.population);
+      const total = d3.sum(data, (d) => d.population);
 
-        const tooltip = d3.select("body").append("div").attr("class", "tooltip");
+      const tooltip = d3.select("body").append("div").attr("class", "tooltip");
 
-        const mouseover = function (d) {
-			tooltip.style("opacity", 1)
-			d3.select(this).style("opacity", .5)
-		};
+      const mouseover = function (d) {
+        tooltip.style("opacity", 1);
+        d3.select(this).style("opacity", 0.5);
+      };
 
-		const mousemove = function (event, d) {
-			const percent = Math.round(1000 * d.data.population / total) / 10;
-			const str = d.data.country + ' - Population : ' + d.data.population + "<br>" + "Population Percentage : " + percent + "%";
-			tooltip.html(str).style("top", event.pageY - 10 + "px").style("left", event.pageX + 10 + "px")
-		};
+      const mousemove = function (event, d) {
+        const percent = Math.round((1000 * d.data.population) / total) / 10;
+        const str =
+          d.data.country +
+          " - Population : " +
+          d.data.population +
+          "<br>" +
+          "Population Percentage : " +
+          percent +
+          "%";
+        tooltip
+          .html(str)
+          .style("top", event.pageY - 10 + "px")
+          .style("left", event.pageX + 10 + "px");
+      };
 
-		const mouseleave = function (d) {
-			tooltip.style("opacity", 0)
-			d3.select(this).style("stroke", "none").style("opacity", 1)
-			d3.select(this).transition().attr("d", arc).attr("stroke", "none");
-		};
-        svg.selectAll("path")
-            .data(dataPrepared)
-            .enter()
-            .append("path")
-            .attr("d", arc)
-            .attr("fill", d => color(d.data.country))
-            .on("mouseover", mouseover)
-            .on("mousemove", mousemove)
-            .on("mouseleave", mouseleave);
+      const mouseleave = function (d) {
+        tooltip.style("opacity", 0);
+        d3.select(this).style("stroke", "none").style("opacity", 1);
+        d3.select(this).transition().attr("d", arc).attr("stroke", "none");
+      };
+      svg
+        .selectAll("path")
+        .data(dataPrepared)
+        .enter()
+        .append("path")
+        .attr("d", arc)
+        .attr("fill", (d) => color(d.data.country))
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseleave", mouseleave);
 
-        const legend = legendContainer.append("svg")
-            .attr("width", 400)
-            .attr("height", dataPrepared.length * 20)
-            .append("g");
+      const legend = legendContainer
+        .append("svg")
+        .attr("width", 400)
+        .attr("height", dataPrepared.length * 20)
+        .append("g");
 
-        legend.selectAll("rect")
-            .data(dataPrepared)
-            .enter()
-            .append("rect")
-            .attr("x", 0)
-            .attr("y", (d, i) => i * 20)
-            .attr("width", 10)
-            .attr("height", 10)
-            .style("fill", d => color(d.data.country));
+      legend
+        .selectAll("rect")
+        .data(dataPrepared)
+        .enter()
+        .append("rect")
+        .attr("x", 0)
+        .attr("y", (d, i) => i * 20)
+        .attr("width", 10)
+        .attr("height", 10)
+        .style("fill", (d) => color(d.data.country));
 
-        legend.selectAll("text")
-            .data(dataPrepared)
-            .enter()
-            .append("text")
-            .attr("x", 20)
-            .attr("y", (d, i) => i * 20 + 9)
-            .text(d => d.data.country);
+      legend
+        .selectAll("text")
+        .data(dataPrepared)
+        .enter()
+        .append("text")
+        .attr("x", 20)
+        .attr("y", (d, i) => i * 20 + 9)
+        .text((d) => d.data.country);
     }
-</script>
-
+  </script>
 </html>

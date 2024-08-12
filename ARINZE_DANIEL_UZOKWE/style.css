@@ -52,3 +52,6 @@ body {
 h1 {
     margin: 0;
 }
+.navbar {
+    background-color: #2e67d6;
+  }
