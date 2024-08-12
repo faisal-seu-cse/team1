@@ -21,7 +21,7 @@
         background-color: #2e67d6;
       }
 
-      .tooltip {
+      .tooltips {
         position: absolute;
         background-color: white;
         border: solid 1px #ddd;
@@ -195,7 +195,7 @@
       </div>
     </div>
 
-    <div class="tooltip" role="tooltip" aria-hidden="true"></div>
+    <div class="tooltips" role="tooltips" aria-hidden="true"></div>
 
     <script>
       const margin = { top: 60, right: 300, bottom: 50, left: 70 },
@@ -212,7 +212,7 @@
 
       const color = d3.scaleOrdinal(d3.schemeCategory10);
 
-      const tooltip = d3.select(".tooltip");
+      const tooltips = d3.select(".tooltips");
 
       let data;
 
@@ -330,7 +330,7 @@
             .attr("stroke", "white")
             .attr("stroke-width", 1.5)
             .on("mouseover", (event, d) => {
-              tooltip
+              tooltips
                 .style("display", "block")
                 .html(
                   `<strong>${d.country}</strong><br>Population: ${d.pop2024}<br>Land Area: ${d.landAreaKm} km²<br>Density: ${d.Density_2024}`
@@ -339,24 +339,24 @@
             })
             .on("mousemove", (event) => {
               const [xPos, yPos] = [event.pageX + 10, event.pageY - 10];
-              tooltip
+              tooltips
                 .style(
                   "top",
                   Math.min(
                     yPos,
-                    window.innerHeight - tooltip.node().offsetHeight - 10
+                    window.innerHeight - tooltips.node().offsetHeight - 10
                   ) + "px"
                 )
                 .style(
                   "left",
                   Math.min(
                     xPos,
-                    window.innerWidth - tooltip.node().offsetWidth - 10
+                    window.innerWidth - tooltips.node().offsetWidth - 10
                   ) + "px"
                 );
             })
             .on("mouseout", () => {
-              tooltip.style("display", "none").attr("aria-hidden", "true");
+              tooltips.style("display", "none").attr("aria-hidden", "true");
             });
 
           const legend = svg
@@ -422,7 +422,7 @@
               .attr("stroke", "black")
               .attr("stroke-width", 1.5)
               .on("mouseover", () => {
-                tooltip
+                tooltips
                   .style("display", "block")
                   .html(
                     `<strong>${continent}</strong><br>Number of countries: ${continentData.length}`
@@ -431,24 +431,24 @@
               })
               .on("mousemove", (event) => {
                 const [xPos, yPos] = [event.pageX + 10, event.pageY - 10];
-                tooltip
+                tooltips
                   .style(
                     "top",
                     Math.min(
                       yPos,
-                      window.innerHeight - tooltip.node().offsetHeight - 10
+                      window.innerHeight - tooltips.node().offsetHeight - 10
                     ) + "px"
                   )
                   .style(
                     "left",
                     Math.min(
                       xPos,
-                      window.innerWidth - tooltip.node().offsetWidth - 10
+                      window.innerWidth - tooltips.node().offsetWidth - 10
                     ) + "px"
                   );
               })
               .on("mouseout", () => {
-                tooltip.style("display", "none").attr("aria-hidden", "true");
+                tooltips.style("display", "none").attr("aria-hidden", "true");
               });
 
             svg
