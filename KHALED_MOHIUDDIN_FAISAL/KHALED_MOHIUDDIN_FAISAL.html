@@ -157,7 +157,7 @@
         .attr("font-weight", "bold")
         .style("fill", "grey");
 
-      let intervalId; // playvack
+      let interval_id; //playvack
 
       //loading the json file
       d3.json("n_df.json")
@@ -187,10 +187,10 @@
           //digits to billion/million
           const millionBillion = (d) => {
             if (d >= 1e9) return (d / 1e9).toFixed(2) + "B";
-            return d; // Fallback
+            return d;
           };
 
-          //x-axis domain once
+          //x-axis domain
           x.domain([0, maxValue]);
           const xAxis = svg
             .append("g")
@@ -273,8 +273,8 @@
 
           let yearIndex = 0;
           function startAnimation() {
-            if (!intervalId) {
-              intervalId = setInterval(() => {
+            if (!interval_id) {
+              interval_id = setInterval(() => {
                 yearIndex = (yearIndex + 1) % formatted_data.length;
                 update(formatted_data[yearIndex]);
               }, 2000);
@@ -282,8 +282,8 @@
           }
 
           function stopAnimation() {
-            clearInterval(intervalId);
-            intervalId = null;
+            clearInterval(interval_id);
+            interval_id = null;
           }
 
           document
